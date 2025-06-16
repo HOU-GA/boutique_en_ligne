@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/****************css barre de navigation**************************/
+/****************css pur barre de navigation**************************/
 
 .barr_nav {
     display: flex;
@@ -52,7 +52,7 @@
     max-height: 700px;
   }
 
-  /**************CSS PRODUITS******************************/
+  /**************CSS pur PRODUITS******************************/
 
   #produits{
 
@@ -106,22 +106,24 @@
     padding: 3%;
 }
 
-#produits .grid .tab div h5,button{
+#produits .grid .tab div h5{
     color: teal;
     font-size: large;
 }
 
+/**********en neglige le css pur pour la bouton Acheter maintenant et on change par designe Bootstrap***********************/
+/*
 #produits .grid .tab div button{
     border: none;
     padding: 10px;
     background-color: bisque;
     border-radius: 10px;
     transition: 3s;
-}
-
+}*/
+/*
 #produits .grid .tab div button:hover{
     background-color: rgb(96, 240, 233);
-}
+}*/
 
 #produits .grid .tab p {
     text-align: justify;
@@ -141,6 +143,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30px;
+    margin-right: 20px;
     }
 
 
@@ -155,8 +158,9 @@
         cursor: pointer;
       }
 
+      
     /*************Taille ecran***************************/
-    /***************smaller smartphones***480px************************/
+    /***************smaller smartphones <= 500px************************/
  
     @media screen and (max-width: 500px) {
        /* body{
@@ -210,7 +214,7 @@
       
     }
 
-    /****Section produits****/
+    /****css pur Section produits****/
     
         #produits h1{
             font-size: 20px;
@@ -247,7 +251,7 @@
                 
     }
     
-    /******************Tablet and larger smartphones*481****************************************/
+    /******************Tablet and larger smartphones entre 501 et 768px****************************************/
 
 
     @media screen and (min-width: 501px) and (max-width: 768px) {
@@ -337,7 +341,7 @@
      
     }
 
-    /**********************Laptops, larger tablets in ladscape, and small desktops*******************************/
+    /**********************Laptops, larger tablets in ladscape, and small desktops entre 769px et 1279px*******************************/
 
     @media screen and (min-width: 769px) and (max-width: 1279px) {
         /*body{
@@ -393,18 +397,23 @@
  
      /****Section produits****/
      
+     /*****choix de taille ecriture et padding super et infer pour titre h1**********/
          #produits h1{
              font-size: 20px;
              padding-top: 20px;
              padding-bottom: 20px;
                  
          }
+
+         /***********diviser l'espace de section produits en 2 colonns en utilisant grid**********************************/
  
          #produits .grid{
              display: grid;
              grid-template-columns: 1fr 1fr ;
                          
          }
+
+         /**************en utilisant le principe de flex en separe titre et le bouton sur deux ligne************/
  
          #produits .grid .tab div{
              display: felx;
@@ -428,5 +437,5 @@
 
 
 
-    /***********************Larger Desktops and monitor********/
+    /***********************Larger Desktops and monitor >= 1280px********/
     
